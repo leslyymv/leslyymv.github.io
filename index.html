@@ -2,17 +2,60 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <h1>Clases HTML y CSS </h1>
-        <p>Lista de clases del curso de Lenguaje de Programación (HTML y CSS) de la Facultad de Comunicación Social y Periodismo.  <p>
-        <ul>
-            <li><a href="./clase-01/index.html">Clase 1</a></li> <!--la "a" es para crear un link-->
-            <li><a href="./parcial-1/index.html">Receta</a></li>
-        </ul>
-    </main>
+    <form action="">
+        <label for="nombre">
+            <span>¿Cuál es tu nombre?</span>
+            <input type="text" name="nombre" id="nombre">
+        </label>
+        <label for="nacimiento">
+            <span>¿Cuándo naciste?</span>
+            <input type="date" name="nacimiento" id="nacimiento">
+        </label>
+        <label for="Correo">
+            <span>¿Cuál es tu correo?</span>
+            <input type="email" name="Correo" id="Correo">
+        </label>
+        <label for="fecha1">
+            <span>¿Cuándo y a qué hora naciste?</span>
+            <input type="datetime-local" name="fecha1" id="fecha1">
+        </label>
+        <label for="cars">
+            <span>Elige un carro:</span>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </label>
+        <label for="cars2">
+            <span>Elige un carro:</span>
+		<input list="cars2">
+			<datalist id="cars2">
+				<option value="Volvo">
+				<option value="BMW">
+				<option value="Mercedes">
+				<option value="Audi">
+			</datalist>
+        </label>
+        <label for="frutas">
+            <span>Elige una fruta:</span>
+            <select name="frutas" id="frutas">
+                <option value="sandia">Sandía</option>
+                <option value="mango">Mango</option>
+                <option value="maracuya">Maracuya</option>
+                <option value="piña">Piña</option>
+                <option value="mora">Mora</option>
+            </select>  
+        </label>
+        <input type="submit" name="enviar" id="enviar">
+    </form>
+    <input type="button" value="¡Haz clic aquí!">
+
+    
 </body>
 </html>
